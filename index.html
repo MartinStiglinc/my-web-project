@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0f17" />
+  <title>Sales Decision Daily</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="page">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">SDD</div>
+        <div class="brand-text">
+          <div class="brand-title">Sales Decision Daily</div>
+          <div class="brand-subtitle" id="todayDateLabel">—</div>
+        </div>
+      </div>
+
+      <div class="lang-toggle" role="group" aria-label="Language">
+        <button id="langEN" class="seg" type="button" aria-pressed="false">EN</button>
+        <button id="langSK" class="seg" type="button" aria-pressed="false">SK</button>
+      </div>
+    </header>
+
+    <section class="card" aria-live="polite">
+      <div class="card-head">
+        <h1 class="title" id="scenarioTitle">Loading…</h1>
+        <p class="context" id="scenarioContext"></p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="card-body">
+        <h2 class="question" id="scenarioQuestion"></h2>
+
+        <div class="choices" id="choices">
+          <button class="choice-btn" id="btnA" type="button" data-choice="A">
+            <span class="choice-letter">A</span>
+            <span class="choice-text" id="textA">—</span>
+          </button>
+          <button class="choice-btn" id="btnB" type="button" data-choice="B">
+            <span class="choice-letter">B</span>
+            <span class="choice-text" id="textB">—</span>
+          </button>
+          <button class="choice-btn" id="btnC" type="button" data-choice="C">
+            <span class="choice-letter">C</span>
+            <span class="choice-text" id="textC">—</span>
+          </button>
+        </div>
+
+        <div class="result" id="resultBox" hidden>
+          <div class="result-top">
+            <div class="pill" id="labelPill">—</div>
+            <div class="small" id="attemptInfo">—</div>
+          </div>
+
+          <div class="metrics" id="metrics">
+            <div class="metric">
+              <div class="metric-head">
+                <span class="metric-name" id="mRelName">Relationship</span>
+                <span class="metric-value" id="mRelVal">0</span>
+              </div>
+              <div class="bar"><div class="bar-fill" id="mRelBar"></div></div>
+            </div>
+
+            <div class="metric">
+              <div class="metric-head">
+                <span class="metric-name" id="mProfitName">Profit</span>
+                <span class="metric-value" id="mProfitVal">0</span>
+              </div>
+              <div class="bar"><div class="bar-fill" id="mProfitBar"></div></div>
+            </div>
+
+            <div class="metric">
+              <div class="metric-head">
+                <span class="metric-name" id="mRiskName">Risk</span>
+                <span class="metric-value" id="mRiskVal">0</span>
+              </div>
+              <div class="bar"><div class="bar-fill risk" id="mRiskBar"></div></div>
+            </div>
+
+            <div class="metric">
+              <div class="metric-head">
+                <span class="metric-name" id="mSafetyName">Safety</span>
+                <span class="metric-value" id="mSafetyVal">0</span>
+              </div>
+              <div class="bar"><div class="bar-fill safety" id="mSafetyBar"></div></div>
+            </div>
+
+            <div class="total-row">
+              <div class="total">
+                <span class="total-label" id="totalLabel">Total</span>
+                <span class="total-value" id="totalVal">0</span>
+              </div>
+              <div class="streak" id="streakBox">
+                <div class="streak-item">
+                  <div class="streak-num" id="streakCurrent">0</div>
+                  <div class="streak-text" id="streakCurrentLabel">Current</div>
+                </div>
+                <div class="streak-item">
+                  <div class="streak-num" id="streakBest">0</div>
+                  <div class="streak-text" id="streakBestLabel">Best</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="share" id="shareBox">
+            <div class="share-head">
+              <div class="share-title" id="shareTitle">Share</div>
+              <div class="share-sub" id="shareSub">Copy or share your result.</div>
+            </div>
+            <textarea id="shareText" class="share-text" rows="4" readonly></textarea>
+            <div class="share-actions">
+              <button class="btn secondary" id="copyBtn" type="button">Copy</button>
+              <button class="btn primary" id="shareBtn" type="button">Share</button>
+            </div>
+            <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+          </div>
+        </div>
+
+        <div class="hint" id="hintBox">
+          <span class="hint-dot" aria-hidden="true"></span>
+          <span id="hintText">One decision per day. Choose wisely.</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span class="muted" id="footerText">Daily micro-scenarios for sales leaders.</span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

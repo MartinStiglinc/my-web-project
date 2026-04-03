@@ -1,0 +1,116 @@
+[
+  {
+    "date": "2026-04-01",
+    "title": {
+      "en": "The Discount Trap",
+      "sk": "Pasca zľavy"
+    },
+    "context": {
+      "en": "A long-term customer says a competitor offered 12% lower price and wants you to match it immediately.",
+      "sk": "Dlhodobý zákazník tvrdí, že konkurencia ponúka o 12 % nižšiu cenu a chce, aby si ju okamžite dorovnal."
+    },
+    "question": {
+      "en": "What do you do next?",
+      "sk": "Čo urobíš ako ďalšie?"
+    },
+    "options": {
+      "A": {
+        "text": {
+          "en": "Match the discount right away to protect the account.",
+          "sk": "Hneď dorovnáš zľavu, aby si udržal účet."
+        },
+        "scores": { "relationship": 7, "profit": 3, "risk": 6 }
+      },
+      "B": {
+        "text": {
+          "en": "Ask for competitor quote details and propose a value-based bundle instead of pure discount.",
+          "sk": "Vypýtaš si detaily ponuky a navrhneš balík hodnoty namiesto čistej zľavy."
+        },
+        "scores": { "relationship": 8, "profit": 7, "risk": 3 }
+      },
+      "C": {
+        "text": {
+          "en": "Refuse any discount and tell them your pricing is final.",
+          "sk": "Odmietneš zľavu a povieš, že cena je konečná."
+        },
+        "scores": { "relationship": 3, "profit": 8, "risk": 7 }
+      }
+    }
+  },
+  {
+    "date": "2026-04-02",
+    "title": {
+      "en": "Escalation Email to the CEO",
+      "sk": "Eskalácia emailom na CEO"
+    },
+    "context": {
+      "en": "A key account is unhappy with a recent service failure and copied their CEO on an angry email demanding a response within 2 hours.",
+      "sk": "Kľúčový zákazník je nespokojný po zlyhaní služby a do nahnevaného emailu pridal aj svojho CEO. Žiada odpoveď do 2 hodín."
+    },
+    "question": {
+      "en": "How do you respond?",
+      "sk": "Ako zareaguješ?"
+    },
+    "options": {
+      "A": {
+        "text": {
+          "en": "Reply immediately with a short apology and promise a full RCA tomorrow.",
+          "sk": "Hneď odpovieš krátkym ospravedlnením a sľúbiš kompletnú analýzu príčiny zajtra."
+        },
+        "scores": { "relationship": 7, "profit": 6, "risk": 4 }
+      },
+      "B": {
+        "text": {
+          "en": "Call the account lead first, then send a structured response with facts, next steps, and a meeting invite today.",
+          "sk": "Najprv zavoláš zodpovednej osobe, potom pošleš štruktúrovanú odpoveď s faktami, krokmi a pozvánkou na dnešný call."
+        },
+        "scores": { "relationship": 9, "profit": 7, "risk": 2 }
+      },
+      "C": {
+        "text": {
+          "en": "Wait until you have the complete internal details to avoid mistakes, then respond later.",
+          "sk": "Počkáš na kompletné interné detaily, aby si sa nepomýlil, a odpovieš neskôr."
+        },
+        "scores": { "relationship": 4, "profit": 5, "risk": 7 }
+      }
+    }
+  },
+  {
+    "date": "2026-04-03",
+    "title": {
+      "en": "The Last-Minute Tender",
+      "sk": "Tender na poslednú chvíľu"
+    },
+    "context": {
+      "en": "Procurement sends a tender invite with a 24-hour deadline. Your ops team is at capacity and cannot realistically meet the requested SLA without extra cost.",
+      "sk": "Nákup pošle pozvánku do tendra s deadline 24 hodín. Operations tím je na limite a reálne nevie splniť požadované SLA bez extra nákladov."
+    },
+    "question": {
+      "en": "What is your best move?",
+      "sk": "Aký je najlepší krok?"
+    },
+    "options": {
+      "A": {
+        "text": {
+          "en": "Submit an aggressive offer to win, and figure out delivery later.",
+          "sk": "Pošleš agresívnu ponuku na výhru a dodanie budeš riešiť potom."
+        },
+        "scores": { "relationship": 5, "profit": 8, "risk": 8 }
+      },
+      "B": {
+        "text": {
+          "en": "Reply today: confirm interest, propose a brief call to align SLA scope, and submit a realistic offer with optional add-ons.",
+          "sk": "Odpovieš dnes: potvrdíš záujem, navrhneš krátky call na zosúladenie SLA a pošleš realistickú ponuku s voliteľnými doplnkami."
+        },
+        "scores": { "relationship": 8, "profit": 7, "risk": 3 }
+      },
+      "C": {
+        "text": {
+          "en": "Decline immediately because the deadline is too short and ops is at capacity.",
+          "sk": "Okamžite odmietneš, lebo deadline je príliš krátky a ops je na limite."
+        },
+        "scores": { "relationship": 6, "profit": 4, "risk": 2 }
+      }
+    }
+  }
+]
